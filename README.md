@@ -1,0 +1,1 @@
+An another News module with other functions (maybe)
