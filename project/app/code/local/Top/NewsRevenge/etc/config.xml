@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Top_NewsRevenge>
+            <version>0.1.0</version>
+        </Top_NewsRevenge>
+    </modules>
+
+    <global>
+        <blocks>
+            <top_newsrevenge>
+                <class>Top_NewsRevenge_Block</class>
+            </top_newsrevenge>
+        </blocks>
+        <helpers>
+            <top_newsrevenge>
+                <class>Top_NewsRevenge_Helper</class>
+            </top_newsrevenge>
+        </helpers>
+        <models>
+            <top_newsrevenge>
+                <class>Top_NewsRevenge_Model</class>
+                <resourceModel>top_newsrevenge_resource</resourceModel>
+            </top_newsrevenge>
+            <top_newsrevenge_resource>
+                <class>Top_NewsRevenge_Model_Resource</class>
+                <entities>
+                    <category>
+                        <table>top_newsrevenge_category</table>
+                    </category>
+                    <story>
+                        <table>top_newsrevenge_story</table>
+                    </story>
+                </entities>
+            </top_newsrevenge_resource>
+        </models>
+        <resources>
+            <top_newsrevenge_setup>
+                <setup>
+                    <module>Top_NewsRevenge</module>
+                </setup>
+            </top_newsrevenge_setup>
+        </resources>
+    </global>
+</config>

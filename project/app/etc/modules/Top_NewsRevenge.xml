@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Top_NewsRevenge>
+            <active>1</active>
+            <codePool>local</codePool>
+        </Top_NewsRevenge>
+    </modules>
+</config>
