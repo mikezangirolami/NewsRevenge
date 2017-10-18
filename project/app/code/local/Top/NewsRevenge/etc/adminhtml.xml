@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <menu>
+        <grids>
+            <title>Grids</title>
+            <sort_order>1000</sort_order>
+            <children>
+                <top_newsrevenge>
+                    <title>News</title>
+                    <sort_order>10</sort_order>
+                    <children>
+                        <top_newsrevenge_category>
+                            <title>Categories</title>
+                            <sort_order>10</sort_order>
+                            <action>top_newsrevenge/adminhtml_category</action>
+                        </top_newsrevenge_category>
+                        <top_newsrevenge_story>
+                            <title>Stories</title>
+                            <sort_order>20</sort_order>
+                            <action>top_newsrevenge/adminhtml_story</action>
+                        </top_newsrevenge_story>
+                    </children>
+                </top_newsrevenge>
+            </children>
+        </grids>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <grid>
+                        <children>
+                            <top_newsrevenge translate="title">
+                                <title>Top News Revenge</title>
+                                <sort_order>90</sort_order>
+                            </top_newsrevenge>
+                        </children>
+                    </grid>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <top_newsrevenge translate="title">
+                                        <title>Top News Revenge</title>
+                                        <sort_order>130</sort_order>
+                                    </top_newsrevenge>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

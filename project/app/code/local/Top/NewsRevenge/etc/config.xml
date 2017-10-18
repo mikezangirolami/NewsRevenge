@@ -42,4 +42,16 @@
             </top_newsrevenge_setup>
         </resources>
     </global>
+
+    <admin>
+        <routers>
+            <top_newsrevenge>
+                <use>admin</use>
+                <args>
+                    <module>Top_NewsRevenge</module>
+                    <frontName>top_newsrevenge</frontName>
+                </args>
+            </top_newsrevenge>
+        </routers>
+    </admin>
 </config>
