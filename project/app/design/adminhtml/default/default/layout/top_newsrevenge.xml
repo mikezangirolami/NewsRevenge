@@ -5,4 +5,13 @@
             <block type="top_newsrevenge/adminhtml_category" name="top_newsrevenge.adminhtml.category.grid" />
         </reference>
     </top_newsrevenge_adminhtml_category_index>
+    <top_newsrevenge_adminhtml_category_edit>
+        <reference name="left">
+            <block type="top_newsrevenge/adminhtml_category_edit_tabs" name="top_newsrevenge.adminhtml.category.edit.tabs" />
+        </reference>
+
+        <reference name="content">
+            <block type="top_newsrevenge/adminhtml_category_edit" name="top_newsrevenge.adminhtml.category.edit" />
+        </reference>
+    </top_newsrevenge_adminhtml_category_edit>
 </layout>

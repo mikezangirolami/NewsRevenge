@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <top_newsrevenge_list_index>
+        <reference name="content">
+            <block type="top_newsrevenge/story" name="top_newsrevenge.list" template="top_newsrevenge/list.phtml" />
+        </reference>
+    </top_newsrevenge_list_index>
+</layout>

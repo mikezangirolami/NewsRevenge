@@ -54,4 +54,33 @@
             </top_newsrevenge>
         </routers>
     </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <top_newsrevenge>
+                    <file>top_newsrevenge.xml</file>
+                </top_newsrevenge>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <top_newsrevenge>
+                <use>standard</use>
+                <args>
+                    <module>Top_NewsRevenge</module>
+                    <frontName>storiesrevenge</frontName>
+                </args>
+            </top_newsrevenge>
+        </routers>
+        <layout>
+            <updates>
+                <top_newsrevenge>
+                    <file>top_newsrevenge.xml</file>
+                </top_newsrevenge>
+            </updates>
+        </layout>
+    </frontend>
 </config>

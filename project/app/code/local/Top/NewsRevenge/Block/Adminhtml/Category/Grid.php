@@ -19,7 +19,10 @@ class Top_NewsRevenge_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Block
      */
     public function __construct(){
         parent::__construct();
-        
+        $this->setId("category_id"); //setto l'id chiave primaria della tabella su cui lavorare
+        $this->setDefaultSort("category_id"); //setto quale colonna sarà utilizzata per fare l'ordine di default'
+        $this->setDefaultDir("asc"); //setto il tipo di ordinamento
+        $this->setSaveParametersInSession(true); //salva i parametri di ricerca nella sessione
     }
 
     /**
@@ -70,7 +73,7 @@ class Top_NewsRevenge_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Block
                 "header" => $this->__("Status"),
                 "width" => 150,
                 "type" => "options",
-                "options" => Mage::getModel("top_newsrevenges/source_status")->toGridArray(),
+                "options" => Mage::getModel("top_newsrevenge/source_status")->toGridArray(),
                 "renderer" => "top_newsrevenge/adminhtml_category_grid_renderer_status",
             )
         );
@@ -102,5 +105,14 @@ class Top_NewsRevenge_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Block
             )
         );
         return parent::_prepareColumns();
+    }
+
+    /**
+     * getRowUrl
+     * @param $row
+     * @return string
+     */
+    public function getRowUrl($row){
+        return $this->getUrl('*/*/edit', array('category_id' => $row->getId()));
     }
 }

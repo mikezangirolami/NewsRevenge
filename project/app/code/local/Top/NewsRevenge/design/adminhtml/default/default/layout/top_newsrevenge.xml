@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<layout>
-<top_newsrevenge_adminhtml_category_index>
-    <reference name="content">
-        <block type="top_newsrevenge/adminhtml_category" name="top_newsrevenge.adminhtml.category.grid" />
-    </reference>
-</top_newsrevenge_adminhtml_category_index>
-</layout>

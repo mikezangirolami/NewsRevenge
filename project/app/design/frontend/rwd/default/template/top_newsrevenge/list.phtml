@@ -1,0 +1,21 @@
+<?php
+$stories = $this->getStories();
+?>
+<h1><?=$this->__("Stories"); ?></h1>
+<?php if(!$stories->getSize()) : ?>
+    <p class="note-msg"><?php echo $this->__("There are no stories matching the selection"); ?></p>
+<?php else : ?>
+    <div>
+        <ul>
+            <?php /** @var Top_NewsRevenge_Model_Story $stories */ ?>
+            <?php foreach($stories as $st) : ?>
+                <li>
+                    <div>
+                        <h2><?=$st->getTitle(); ?></h2>
+                        <p><?=$st->getContent(); ?></p>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
