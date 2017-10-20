@@ -41,6 +41,16 @@
                 </setup>
             </top_newsrevenge_setup>
         </resources>
+        <events>
+            <admin_session_user_login_success>
+                <observers>
+                    <top_newsrevenge>
+                        <class>top_newsrevenge/observers_adminLog</class>
+                        <method>adminLogged</method>
+                    </top_newsrevenge>
+                </observers>
+            </admin_session_user_login_success>
+        </events>
     </global>
 
     <admin>
