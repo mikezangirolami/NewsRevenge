@@ -50,6 +50,15 @@
                     </top_newsrevenge>
                 </observers>
             </admin_session_user_login_success>
+
+            <customer_register_success>
+                <observers>
+                    <top_newsrevenge>
+                        <class>top_newsrevenge/observers_customerRegSuc</class>
+                        <method>grabData</method>
+                    </top_newsrevenge>
+                </observers>
+            </customer_register_success>
         </events>
     </global>
 
