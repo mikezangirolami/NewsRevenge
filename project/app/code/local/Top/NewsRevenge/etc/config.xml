@@ -42,6 +42,15 @@
             </top_newsrevenge_setup>
         </resources>
         <events>
+            <sales_order_place_after>
+                <observers>
+                    <top_newsrevenge>
+                        <class>top_newsrevenge/observers_mastTest</class>
+                        <method>test</method>
+                    </top_newsrevenge>
+                </observers>
+            </sales_order_place_after>
+
             <admin_session_user_login_success>
                 <observers>
                     <top_newsrevenge>
